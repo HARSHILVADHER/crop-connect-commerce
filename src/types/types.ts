@@ -40,4 +40,7 @@ export interface CropListing {
   sellerName: string;
   location: string;
   dateAdded: Date;
+  soldUnits?: number;
+  revenue?: number;
+  status?: 'active' | 'sold' | 'expired';
 }
