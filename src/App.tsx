@@ -16,6 +16,7 @@ import SellPage from "./pages/SellPage";
 import AuthPage from "./pages/AuthPage";
 import ProductsPage from "./pages/ProductsPage";
 import ProfilePage from "./pages/ProfilePage";
+import EditProfilePage from "./pages/EditProfilePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,7 +44,7 @@ const App = () => (
                 <Route path="/login" element={<AuthPage />} />
                 <Route path="/signup" element={<AuthPage />} />
                 <Route path="/profile" element={<ProfilePage />} />
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="/edit-profile" element={<EditProfilePage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>

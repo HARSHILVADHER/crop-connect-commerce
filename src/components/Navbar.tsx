@@ -22,8 +22,8 @@ const Navbar = () => {
             <Link to="/seeds" className="font-medium hover:text-primary">Seeds</Link>
             <Link to="/fertilizers" className="font-medium hover:text-primary">Fertilizers</Link>
             <Link to="/pesticides" className="font-medium hover:text-primary">Pesticides</Link>
+            <Link to="/insecticides" className="font-medium hover:text-primary">Insecticides</Link>
             <Link to="/sell" className="font-medium hover:text-primary">Sell Now</Link>
-            <Link to="/profile" className="font-medium hover:text-primary">Profile</Link>
           </div>
 
           {/* Cart and User buttons */}
@@ -33,7 +33,7 @@ const Navbar = () => {
                 <ShoppingCart className="h-5 w-5" />
               </Button>
             </Link>
-            <Link to="/login">
+            <Link to="/profile">
               <Button variant="ghost" size="icon">
                 <User className="h-5 w-5" />
               </Button>
@@ -52,14 +52,14 @@ const Navbar = () => {
         {showMobileMenu && (
           <div className="md:hidden py-4 space-y-4">
             <div className="flex flex-col space-y-2">
-              <Link to="/" className="font-medium p-2 hover:bg-gray-100 rounded-md">Home</Link>
-              <Link to="/seeds" className="font-medium p-2 hover:bg-gray-100 rounded-md">Seeds</Link>
-              <Link to="/fertilizers" className="font-medium p-2 hover:bg-gray-100 rounded-md">Fertilizers</Link>
-              <Link to="/pesticides" className="font-medium p-2 hover:bg-gray-100 rounded-md">Pesticides</Link>
-              <Link to="/sell" className="font-medium p-2 hover:bg-gray-100 rounded-md">Sell Now</Link>
-              <Link to="/profile" className="font-medium p-2 hover:bg-gray-100 rounded-md">Profile</Link>
-              <Link to="/cart" className="font-medium p-2 hover:bg-gray-100 rounded-md">Cart</Link>
-              <Link to="/login" className="font-medium p-2 hover:bg-gray-100 rounded-md">Login</Link>
+              <Link to="/" className="font-medium p-2 hover:bg-gray-100 rounded-md" onClick={() => setShowMobileMenu(false)}>Home</Link>
+              <Link to="/seeds" className="font-medium p-2 hover:bg-gray-100 rounded-md" onClick={() => setShowMobileMenu(false)}>Seeds</Link>
+              <Link to="/fertilizers" className="font-medium p-2 hover:bg-gray-100 rounded-md" onClick={() => setShowMobileMenu(false)}>Fertilizers</Link>
+              <Link to="/pesticides" className="font-medium p-2 hover:bg-gray-100 rounded-md" onClick={() => setShowMobileMenu(false)}>Pesticides</Link>
+              <Link to="/insecticides" className="font-medium p-2 hover:bg-gray-100 rounded-md" onClick={() => setShowMobileMenu(false)}>Insecticides</Link>
+              <Link to="/sell" className="font-medium p-2 hover:bg-gray-100 rounded-md" onClick={() => setShowMobileMenu(false)}>Sell Now</Link>
+              <Link to="/cart" className="font-medium p-2 hover:bg-gray-100 rounded-md" onClick={() => setShowMobileMenu(false)}>Cart</Link>
+              <Link to="/profile" className="font-medium p-2 hover:bg-gray-100 rounded-md" onClick={() => setShowMobileMenu(false)}>Profile</Link>
             </div>
           </div>
         )}

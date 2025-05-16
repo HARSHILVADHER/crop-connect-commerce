@@ -1,6 +1,6 @@
 
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+import App from './App'
 import './index.css'
 
 // Set up a mock user for testing the profile page
