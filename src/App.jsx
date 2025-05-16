@@ -9,7 +9,10 @@ import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HomePage from "./pages/HomePage";
-import CategoryPage from "./pages/CategoryPage";
+import SeedsPage from "./pages/SeedsPage";
+import FertilizersPage from "./pages/FertilizersPage";
+import PesticidesPage from "./pages/PesticidesPage";
+import InsecticidesPage from "./pages/InsecticidesPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import CartPage from "./pages/CartPage";
 import SellPage from "./pages/SellPage";
@@ -33,10 +36,10 @@ const App = () => (
             <main className="flex-grow">
               <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/seeds" element={<CategoryPage />} />
-                <Route path="/fertilizers" element={<CategoryPage />} />
-                <Route path="/pesticides" element={<CategoryPage />} />
-                <Route path="/insecticides" element={<CategoryPage />} />
+                <Route path="/seeds" element={<SeedsPage />} />
+                <Route path="/fertilizers" element={<FertilizersPage />} />
+                <Route path="/pesticides" element={<PesticidesPage />} />
+                <Route path="/insecticides" element={<InsecticidesPage />} />
                 <Route path="/products" element={<ProductsPage />} />
                 <Route path="/product/:id" element={<ProductDetailPage />} />
                 <Route path="/cart" element={<CartPage />} />
